@@ -1,0 +1,29 @@
+.genre-list {
+    background: #232323;
+}
+
+.genre-list__button {
+    padding: 20px 15px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border-bottom: 4px solid transparent;
+}
+
+.genre-list__button:focus {
+    outline: 1px dotted #0775AC;
+}
+
+.genre-list__button_active {
+    border-bottom: 4px solid #F65261;
+}
