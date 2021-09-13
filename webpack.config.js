@@ -1,18 +1,22 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
   return {
     entry: './src/index.tsx',
     output: {
-      filename: 'main.js',
+      filename: 'assets/js/[contenthash].[name].js',
       path: path.resolve(__dirname, 'build'),
+      assetModuleFilename: 'assets/images/[contenthash].[name].[ext]',
     },
     mode: env.dev ? 'development' : 'production',
-    stats: 'minimal',
+    stats: 'errors-warnings',
     watch: !!env.watch,
     resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.json']
+      extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
     },
     devtool: env.dev && 'source-map',
     devServer: {
@@ -25,6 +29,25 @@ module.exports = (env) => {
     },
     module: {
       rules: [
+        {
+          test: /\.(s?)css$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true
+              }
+            },
+            {
+              loader: 'sass-loader'
+            }
+          ]
+        },
+        {
+          test: /\.(png|jpe?g|gif|svg)$/i,
+          type: 'asset/resource'
+        },
         {
           test: /\.ts(x?)$/,
           exclude: /(node_modules|bower_components)/,
@@ -42,11 +65,16 @@ module.exports = (env) => {
       ]
     },
     plugins: [
+      new webpack.ProgressPlugin(),
       new HtmlWebpackPlugin({
         template: "public/index.html",
         inject: 'body',
         minify: !env.dev,
       }),
+      new MiniCssExtractPlugin({
+        filename: 'assets/css/[contenthash].[name].css'
+      }),
+      ... !env.notclean ? [new CleanWebpackPlugin()] : [],
     ],
   };
 }
