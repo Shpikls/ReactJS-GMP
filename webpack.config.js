@@ -45,7 +45,7 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         template: "public/index.html",
         inject: 'body',
-        minify: false
+        minify: !env.dev,
       }),
     ],
   };
