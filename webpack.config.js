@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 module.exports = (env) => {
   return {
@@ -76,6 +77,7 @@ module.exports = (env) => {
         inject: 'body',
         minify: !env.dev,
       }),
+      new CaseSensitivePathsPlugin(),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[contenthash].[name].css'
       }),
