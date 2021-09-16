@@ -1,1 +1,11 @@
+# webstorm
 .idea
+
+# project
+/build
+
+# NPM
+node_modules
+
+# environment settings
+.env.local
