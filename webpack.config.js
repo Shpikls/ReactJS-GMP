@@ -1,11 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack');
+const { ProgressPlugin } = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const dotenvResult = require('dotenv-flow').config();
 
 module.exports = (env) => {
+  env = {
+    ...env,
+    ...dotenvResult.parsed,
+  }
+
+  const { WEBPACK_SERVE } = env
+
   return {
     entry: './src/index.tsx',
     output: {
@@ -71,7 +79,7 @@ module.exports = (env) => {
       ]
     },
     plugins: [
-      new webpack.ProgressPlugin(),
+      new ProgressPlugin(),
       new HtmlWebpackPlugin({
         template: "public/index.html",
         inject: 'body',
@@ -81,7 +89,7 @@ module.exports = (env) => {
       new MiniCssExtractPlugin({
         filename: 'assets/css/[contenthash].[name].css'
       }),
-      ... !env.notclean ? [new CleanWebpackPlugin()] : [],
+      ... !WEBPACK_SERVE ? [new CleanWebpackPlugin()] : [],
     ],
   };
 }
