@@ -7,12 +7,10 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const dotenvResult = require('dotenv-flow').config();
 
 module.exports = (env) => {
-  env = {
+  const { WEBPACK_SERVE, watch, dev} = {
     ...env,
     ...dotenvResult.parsed,
   }
-
-  const { WEBPACK_SERVE } = env
 
   return {
     entry: './src/index.tsx',
@@ -21,13 +19,13 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'build'),
       assetModuleFilename: 'assets/images/[contenthash].[name].[ext]',
     },
-    mode: env.dev ? 'development' : 'production',
+    mode: dev ? 'development' : 'production',
     stats: 'errors-warnings',
-    watch: !!env.watch,
+    watch: !!watch,
     resolve: {
       extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
     },
-    devtool: env.dev && 'source-map',
+    devtool: dev && 'source-map',
     devServer: {
       static: {
         directory: path.join(__dirname, 'public'),
@@ -83,7 +81,7 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         template: "public/index.html",
         inject: 'body',
-        minify: !env.dev,
+        minify: !dev,
       }),
       new CaseSensitivePathsPlugin(),
       new MiniCssExtractPlugin({
