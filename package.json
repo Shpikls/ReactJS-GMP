@@ -7,7 +7,8 @@
     "start": "webpack serve --env dev",
     "build": "webpack",
     "build:dev": "webpack --env dev",
-    "watch": "webpack --env dev --env watch"
+    "watch": "webpack --env dev --env watch",
+    "lint:fix": "eslint * --fix --max-warnings 0"
   },
   "repository": {
     "type": "git",
@@ -25,16 +26,22 @@
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "babel-loader": "^8.2.2",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.2.0",
     "dotenv-flow": "^3.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.25.3",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.3.0",
+    "prettier": "2.4.1",
     "sass": "^1.39.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
+    "styled-components": "^5.3.1",
     "svgo-loader": "^3.0.0",
     "typescript": "^4.4.3",
     "webpack": "^5.52.1",
@@ -43,6 +50,7 @@
   },
   "dependencies": {
     "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
