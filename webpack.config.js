@@ -35,7 +35,7 @@ module.exports = (env) => {
 				'~': resolvePath('src/'),
 			},
 		},
-		devtool: dev && 'source-map',
+		devtool: dev && 'inline-source-map',
 		devServer: {
 			static: {
 				directory: path.join(__dirname, 'public'),
@@ -72,13 +72,16 @@ module.exports = (env) => {
 				},
 				{
 					test: /\.ts(x?)$/,
-					exclude: /(node_modules|bower_components)/,
-					use: {
-						loader: 'babel-loader',
-						options: {
-							presets: ['@babel/preset-env', '@babel/preset-typescript', '@babel/preset-react'],
+					use: [
+						{
+							loader: 'babel-loader',
+							options: {
+								presets: ['@babel/preset-env', '@babel/preset-react'],
+							},
 						},
-					},
+						'ts-loader',
+					],
+					exclude: /(node_modules|bower_components)/,
 				},
 			],
 		},
