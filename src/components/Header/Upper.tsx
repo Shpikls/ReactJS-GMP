@@ -2,13 +2,26 @@ import { Logo } from '@components/Logo'
 import { Button } from '@styled/Button'
 import { Flex } from '@styled/Flex'
 import * as React from 'react'
+import { useContext } from 'react'
 import styled from 'styled-components'
+import { ModalContext } from '~/context'
 
 export const Upper = (): JSX.Element => {
+	const [, setModalState] = useContext(ModalContext)
+
+	const handleOpenAddModal = () => {
+		setModalState((prevState) => {
+			return {
+				...prevState,
+				...{ addModal: true },
+			}
+		})
+	}
+
 	return (
 		<Flex jContent="space-between">
 			<Logo />
-			<AddButton>+ add movie</AddButton>
+			<AddButton onClick={handleOpenAddModal}>+ add movie</AddButton>
 		</Flex>
 	)
 }

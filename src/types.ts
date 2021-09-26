@@ -15,4 +15,10 @@ type GenreType = {
 	value: string
 }
 
-export { Item, GenreType }
+interface IModalState {
+	addModal: boolean
+	editMovie: boolean
+	deleteMovie: boolean
+}
+
+export { Item, GenreType, IModalState }

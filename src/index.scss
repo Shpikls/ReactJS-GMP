@@ -3,6 +3,10 @@ body {
   margin: 0;
 
   font-family: Montserrat, sans-serif;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 *:focus {

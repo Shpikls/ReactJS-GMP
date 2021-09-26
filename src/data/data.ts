@@ -7,11 +7,13 @@ import img5 from '../asserts/5.png'
 import img6 from '../asserts/6.png'
 
 export const getCards = (): Array<Item> | Array<[]> => {
-	if (Math.floor(Math.random() * 10)) {
-		return cards
-	}
+	return cards
 
-	return []
+	// if (Math.floor(Math.random() * 10)) {
+	// 	return cards
+	// }
+	//
+	// return []
 }
 
 export const cards: Array<Item> = [
