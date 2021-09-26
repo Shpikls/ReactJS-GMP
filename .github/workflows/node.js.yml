@@ -24,7 +24,7 @@ jobs:
     - run: npm ci
     - run: npm run build
     - name: Commiting build folder
-    - run: |
+      run: |
         git config --global user.name 'Project'
         git config --global user.email 'shpikls@users.noreply.github.com'
         git commit -am "Creating build"
