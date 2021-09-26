@@ -27,6 +27,6 @@ jobs:
       run: |
         git config --global user.name 'Project'
         git config --global user.email 'shpikls@users.noreply.github.com'
-        git add ./build
+        git add ./docs
         git commit -m "Creating build"
         git push
