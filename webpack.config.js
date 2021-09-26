@@ -16,7 +16,7 @@ module.exports = (env) => {
     entry: './src/index.tsx',
     output: {
       filename: 'assets/js/[contenthash].[name].js',
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, 'docs'),
       assetModuleFilename: 'assets/images/[contenthash].[name].[ext]',
     },
     mode: dev ? 'development' : 'production',
