@@ -1,21 +1,14 @@
-a {
-  display: block;
-  width: 200px;
-  height: 200px;
-  box-sizing: border-box;
-  border: 1px solid darkgray;
-  margin: 8px 0;
-  cursor: zoom-in;
-  overflow: hidden;
+body {
+  background: #555555;
+  margin: 0;
 
-  &:hover {
-    border: 1px solid black;
-  }
+  font-family: Montserrat, sans-serif;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+*:focus {
+  outline: lightgray dotted 1px;
+}
+
+button {
+  cursor: pointer;
 }
