@@ -6,8 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
 jobs:
   build:
@@ -23,3 +23,9 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+    - name: Commiting build folder
+    - run: |
+        git config --global user.name 'Project'
+        git config --global user.email 'shpikls@users.noreply.github.com'
+        git commit -am "Creating build"
+        git push
