@@ -1,2 +1,4 @@
 *.md
 *.svg
+package-lock.json
+tsconfig.json

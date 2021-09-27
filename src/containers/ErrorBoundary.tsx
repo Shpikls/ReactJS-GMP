@@ -1,9 +1,9 @@
 import { ErrorTemplate } from '@components/ErrorTemplate'
 import * as React from 'react'
-import { Item } from '~/types'
+import { getCards } from '~/data/data'
 
-export const ErrorBoundary = (component: React.FC, data: Array<Item> | Array<[]>): React.FC => {
-	if (!data.length) {
+export const ErrorBoundary = (component: React.FC): React.FC => {
+	if (!getCards().length) {
 		return ErrorTemplate
 	}
 

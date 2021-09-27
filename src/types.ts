@@ -4,8 +4,11 @@ type Item = {
 	image: string
 	genre: Array<string>
 	year: number
-	duration?: string
-	rating?: string
+	duration: {
+		hours: number
+		minutes: number
+	}
+	rating: string
 	description?: string
 	feature?: string
 }
@@ -21,4 +24,6 @@ interface IModalState {
 	deleteMovie: boolean
 }
 
-export { Item, GenreType, IModalState }
+type Sort = string | undefined
+
+export { Item, GenreType, IModalState, Sort }
