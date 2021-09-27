@@ -1,9 +1,9 @@
 body {
-  background: #555555;
-  margin: 0;
-  width: 100vw;
-  overflow-x: hidden;
-  font-family: Montserrat, sans-serif;
+	font-family: Montserrat, sans-serif;
+	background: #555555;
+	margin: 0;
+	width: 100vw;
+	overflow-x: hidden;
 
   &.modal-open {
     overflow: hidden;
