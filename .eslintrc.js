@@ -19,4 +19,9 @@ module.exports = {
 		'eol-last': 2,
 		'max-len': [2, { code: 120 }],
 	},
+	settings: {
+		react: {
+			version: 'detected',
+		},
+	},
 }
