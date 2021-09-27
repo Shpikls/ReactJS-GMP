@@ -1,6 +1,7 @@
 *.md
 *.svg
-package-lock.json
-tsconfig.json
 node_modules
 /docs
+/README.md
+/package-lock.json
+/tsconfig.json
