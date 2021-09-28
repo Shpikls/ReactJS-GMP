@@ -2,8 +2,8 @@ name: Checking pull request
 
 on: pull_request
 
-jobs: 
-  lint: 
+jobs:
+  checkin:
   
     runs-on: ubuntu-latest
     
