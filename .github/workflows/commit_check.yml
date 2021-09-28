@@ -1,4 +1,4 @@
-name: Check
+name: Checking pull request
 
 on: pull_request
 
@@ -14,8 +14,10 @@ jobs:
       with:
         node-version: '16.x'
         cache: 'npm'
-    - run: npm ci
-    - run: npm run lint:fix
-    - name: TypeChek
+    - name: NPM Clean Install
+      run: npm ci
+    - name: ESLint
+      run: npm run lint:fix
+    - name: TypeScript
       run: npm run typecheck
     
