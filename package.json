@@ -8,7 +8,8 @@
     "build": "webpack",
     "build:dev": "webpack --env dev",
     "watch": "webpack --env dev --env watch",
-    "lint:fix": "eslint * --fix --no-error-on-unmatched-pattern"
+    "lint:fix": "eslint * --fix --no-error-on-unmatched-pattern",
+		"typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
