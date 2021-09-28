@@ -1,4 +1,4 @@
-name: Lint check
+name: Check
 
 on: pull_request
 
@@ -16,4 +16,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run lint:fix
+    - name: TypeChek
+      run: npm run typecheck
     
