@@ -2,7 +2,9 @@ import actionButton from '@asserts/action-button.svg'
 import closeActionButton from '@asserts/close-action-button.svg'
 import { Button } from '@styled/Button'
 import * as React from 'react'
+import { useContext } from 'react'
 import styled from 'styled-components'
+import { ModalContext } from '~/context'
 
 type PropsAction = {
 	action: boolean
@@ -14,6 +16,26 @@ type PropsActions = {
 }
 
 export const Actions = ({ action, actionHandler }: PropsAction): JSX.Element => {
+	const [, setModalState] = useContext(ModalContext)
+
+	const handleOpenEditModal = () => {
+		setModalState((prevState) => {
+			return {
+				...prevState,
+				...{ editMovie: true },
+			}
+		})
+	}
+
+	const handleOpenDeleteModal = () => {
+		setModalState((prevState) => {
+			return {
+				...prevState,
+				...{ deleteMovie: true },
+			}
+		})
+	}
+
 	return (
 		<>
 			<Action onClick={() => actionHandler(true)} show={!action}>
@@ -23,8 +45,8 @@ export const Actions = ({ action, actionHandler }: PropsAction): JSX.Element => 
 				<CloseActionButton onClick={() => actionHandler(false)}>
 					<img src={closeActionButton} alt="close-action" />
 				</CloseActionButton>
-				<ActionButton>Edit</ActionButton>
-				<ActionButton>Delete</ActionButton>
+				<ActionButton onClick={handleOpenEditModal}>Edit</ActionButton>
+				<ActionButton onClick={handleOpenDeleteModal}>Delete</ActionButton>
 			</ActionsDetails>
 		</>
 	)

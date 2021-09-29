@@ -10,9 +10,14 @@ type JustifyContent =
 	| 'initial'
 	| 'inherit'
 
-export const Flex = styled.div<{ jContent?: JustifyContent }>`
+type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
+
+export const Flex = styled.div<{ jContent?: JustifyContent; fDirection?: FlexDirection }>`
 	display: flex;
 	${({ jContent }) => {
-		if (jContent) return `justify-content: ${jContent}`
-	}};
+		if (jContent) return `justify-content: ${jContent};`
+	}}
+	${({ fDirection }) => {
+		if (fDirection) return `flex-direction: ${fDirection};`
+	}}
 `

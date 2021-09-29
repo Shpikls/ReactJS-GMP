@@ -1,6 +1,8 @@
-import arrowSelect from '@asserts/arrow-select.svg'
 import * as React from 'react'
+import { useContext } from 'react'
 import styled from 'styled-components'
+import arrowSelect from '~/asserts/arrow-select.svg'
+import { SortContext } from '~/context'
 
 type Category = {
 	id: number
@@ -50,9 +52,13 @@ type SelectProps = {
 }
 
 const Select = ({ children }: SelectProps) => {
+	const [sort, setSort] = useContext(SortContext)
+
 	return (
 		<SelectWrapper>
-			<SelectInner>{children}</SelectInner>
+			<SelectInner value={sort} onChange={(event) => setSort(event.target.value)}>
+				{children}
+			</SelectInner>
 		</SelectWrapper>
 	)
 }
@@ -83,6 +89,7 @@ const SelectInner = styled.select`
 	padding: 0 16px 0 0;
 	position: relative;
 	appearance: none;
+	text-align: right;
 `
 
 const SortTextLabel = styled.label`
@@ -96,7 +103,7 @@ const Flex = styled.div`
 	display: flex;
 
 	* {
-		margin-right: 30px;
+		margin-right: 8px;
 	}
 
 	*:last-child {

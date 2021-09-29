@@ -1,9 +1,9 @@
-name: Lint check
+name: Checking pull request
 
 on: pull_request
 
-jobs: 
-  lint: 
+jobs:
+  checkin:
   
     runs-on: ubuntu-latest
     
@@ -14,6 +14,10 @@ jobs:
       with:
         node-version: '16.x'
         cache: 'npm'
-    - run: npm ci
-    - run: npm run lint:fix
+    - name: NPM Clean Install
+      run: npm ci
+    - name: ESLint
+      run: npm run lint:fix
+    - name: TypeScript
+      run: npm run typecheck
     
