@@ -71,6 +71,14 @@ export const cards: Item[] = [
 			hours: 2,
 			minutes: 34,
 		},
+		description:
+			'Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two ' +
+			'hit men who are out to retrieve a suitcase stolen from their employer, mob boss ' +
+			'Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia ' +
+			'(Uma Thurman) out a few days later when Wallace himself will be out of town. Butch ' +
+			'Coolidge (Bruce Willis) is an aging boxer who is paid by Wallace to lose his fight. ' +
+			'The lives of these seemingly unrelated people are woven together comprising of a ' +
+			'series of funny, bizarre and uncalled-for incidents.—Soumitra',
 	},
 	{
 		id: 2,
@@ -83,6 +91,7 @@ export const cards: Item[] = [
 			hours: 2,
 			minutes: 14,
 		},
+		description: '',
 	},
 	{
 		id: 3,
@@ -96,6 +105,7 @@ export const cards: Item[] = [
 			hours: 2,
 			minutes: 17,
 		},
+		description: '',
 	},
 	{
 		id: 4,
@@ -108,6 +118,7 @@ export const cards: Item[] = [
 			hours: 2,
 			minutes: 40,
 		},
+		description: '',
 	},
 	{
 		id: 5,
@@ -120,6 +131,7 @@ export const cards: Item[] = [
 			hours: 2,
 			minutes: 28,
 		},
+		description: '',
 	},
 	{
 		id: 6,
@@ -133,5 +145,6 @@ export const cards: Item[] = [
 			hours: 1,
 			minutes: 40,
 		},
+		description: '',
 	},
 ]
