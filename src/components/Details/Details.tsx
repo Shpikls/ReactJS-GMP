@@ -1,5 +1,5 @@
 import { goToSearch } from '@containers/App'
-import React, { useContext, useMemo } from 'react'
+import React, { useContext, useEffect, useMemo } from 'react'
 import styled from 'styled-components'
 import searchButton from '~/asserts/search-button.svg'
 import { DetailsState } from '~/context'
@@ -9,6 +9,12 @@ type PropsDetails = {
 	data: Item[]
 }
 
+const useScrollTopOnMount = () => {
+	useEffect(() => {
+		window.scroll(0, 0)
+	}, [])
+}
+
 export const Details = ({ data }: PropsDetails): JSX.Element => {
 	const [{ details }, dispatchDetailsState] = useContext(DetailsState)
 
@@ -16,6 +22,8 @@ export const Details = ({ data }: PropsDetails): JSX.Element => {
 		() => data.filter((item) => item.id == details).reduce((accum, item) => item),
 		[details],
 	)
+
+	useScrollTopOnMount()
 
 	return (
 		<DetailsWrapper>

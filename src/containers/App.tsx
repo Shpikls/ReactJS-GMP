@@ -6,7 +6,7 @@ import { Header } from '@components/Header/Header'
 import { Main } from '@components/Main/Main'
 import { Modal } from '@components/Modal/Modal'
 import * as React from 'react'
-import { useEffect, useReducer, useState } from 'react'
+import { useReducer, useState } from 'react'
 import { Details } from '~/components/Details/Details'
 import { DetailsState, ModalContext, SortContext } from '~/context'
 import { getCards } from '~/data/data'
@@ -58,12 +58,6 @@ export const App = (): JSX.Element => {
 	const [sort, setSort] = useState<Sort>()
 	const [data] = useState<Item[]>(getCards(sort))
 	const [state, dispatch] = useReducer(rootReducer, initialState)
-
-	console.log(state.details)
-
-	useEffect(() => {
-		window.scroll(0, 0)
-	}, [state.details])
 
 	const handleCloseAddModal = () => {
 		setModalState((prevState) => {
