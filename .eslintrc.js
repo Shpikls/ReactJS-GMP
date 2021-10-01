@@ -17,7 +17,6 @@ module.exports = {
 	plugins: ['react', '@typescript-eslint'],
 	rules: {
 		'eol-last': 2,
-		'max-len': [2, { code: 120 }],
 	},
 	settings: {
 		react: {

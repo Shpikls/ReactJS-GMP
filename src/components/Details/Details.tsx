@@ -18,10 +18,7 @@ const useScrollTopOnMount = () => {
 export const Details = ({ data }: PropsDetails): JSX.Element => {
 	const [{ details }, dispatchDetailsState] = useContext(DetailsState)
 
-	const detailsData = useMemo(
-		() => data.filter((item) => item.id == details).reduce((accum, item) => item),
-		[details],
-	)
+	const detailsData = useMemo(() => data.filter((item) => item.id == details).reduce((accum, item) => item), [details])
 
 	useScrollTopOnMount()
 
