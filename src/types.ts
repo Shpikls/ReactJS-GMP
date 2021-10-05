@@ -9,7 +9,7 @@ type Item = {
 		minutes: number
 	}
 	rating: string
-	description?: string
+	description: string
 	feature?: string
 }
 
