@@ -1,16 +1,27 @@
 import { Button } from '@styled/Button'
 import { Flex } from '@styled/Flex'
 import { InputText } from '@styled/Input'
-import * as React from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
+import { movieSearch } from '~/redux/querySlice'
 
-export const Search = (): JSX.Element => {
+export const SearchBar = (): JSX.Element => {
+	const [input, setInput] = useState('')
+	const dispatch = useDispatch()
+
 	return (
 		<SearchWrapper>
 			<SearchTitle>FIND YOUR MOViE</SearchTitle>
 			<Flex jContent="space-between">
-				<InputText placeholder="What do you want to watch?" />
-				<SearchButton>Search</SearchButton>
+				<InputText value={input} onChange={(e) => setInput(e.target.value)} placeholder="What do you want to watch?" />
+				<SearchButton
+					onClick={() => {
+						dispatch(movieSearch(input, true))
+					}}
+				>
+					Search
+				</SearchButton>
 			</Flex>
 		</SearchWrapper>
 	)

@@ -1,25 +1,15 @@
-import { Genre } from '@containers/Genre'
 import { Flex } from '@styled/Flex'
 import * as React from 'react'
 import styled from 'styled-components'
-import { getGenre } from '~/helpers/getGenre'
-import { Item } from '~/types'
+import { Genre } from '~/containers/Genre'
 import { Sort } from './Sort'
 
-type PropsToolBar = {
-	data: Array<Item>
-}
-
-export const ToolBar = ({ data }: PropsToolBar): JSX.Element => {
-	const genre = getGenre(data)
-
-	return (
-		<FlexContainer jContent="space-between">
-			<Genre genre={genre} />
-			<Sort />
-		</FlexContainer>
-	)
-}
+export const ToolBar = (): JSX.Element => (
+	<FlexContainer jContent="space-between">
+		<Genre />
+		<Sort />
+	</FlexContainer>
+)
 
 const FlexContainer = styled(Flex)`
 	border-bottom: 4px solid #424242;

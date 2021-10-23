@@ -1,39 +1,41 @@
 import * as React from 'react'
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
-import { GenreType } from '~/types'
+import { genreSelectors } from '~/redux/genreSlice'
+import { movieGenres, querySelectors } from '~/redux/querySlice'
 
-type PropsGenre = {
-	genre: GenreType[]
-}
-
-const DEFAULT = 'DEFAULT'
-
-export const Genre = ({ genre }: PropsGenre): JSX.Element => {
-	const [active, setActive] = useState<string | number>(DEFAULT)
+export const Genre = (): JSX.Element => {
+	const genre = useSelector(genreSelectors.genre)
+	const selectedGenre = useSelector(querySelectors.filter)
+	const dispatch = useDispatch()
 
 	return (
 		<Flex>
-			<GenreItem {...activeGenre(DEFAULT, active)} onClick={() => setActive(DEFAULT)}>
+			<GenreItem
+				active={!selectedGenre}
+				onClick={() => {
+					dispatch(movieGenres())
+				}}
+			>
 				ALL
 			</GenreItem>
-			{genre.map((item) => (
-				<GenreItem key={item.id} {...activeGenre(item.id, active)} onClick={() => setActive(item.id)}>
-					{item.value}
-				</GenreItem>
-			))}
+			{genre
+				.filter((item, index) => index <= 5)
+				.map((item, index) => {
+					return (
+						<GenreItem
+							key={index}
+							onClick={() => {
+								dispatch(movieGenres(item))
+							}}
+							active={selectedGenre === item}
+						>
+							{item}
+						</GenreItem>
+					)
+				})}
 		</Flex>
 	)
-}
-
-const activeGenre = (key: number | string, state: number | string) => {
-	if (key === state) {
-		return {
-			active: true,
-		}
-	}
-
-	return {}
 }
 
 const Flex = styled.div`

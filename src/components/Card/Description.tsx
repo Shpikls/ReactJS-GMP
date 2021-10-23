@@ -7,14 +7,14 @@ type PropsItem = {
 	card: Item
 }
 
+const getYear = (date: string) => date.slice(0, 4)
+
 export const Description = ({ card }: PropsItem): JSX.Element => {
 	return (
 		<DescriptionWrapper>
-			<TitleCard>{card.name}</TitleCard>
-			<DescriptionStyled>
-				{card.feature || card.genre.reduce((accumulator, genre) => `${accumulator}, ${genre}`)}
-			</DescriptionStyled>
-			<Year year={card.year} />
+			<TitleCard>{card.title}</TitleCard>
+			<DescriptionStyled>{card.genres.reduce((accumulator, genre) => `${accumulator}, ${genre}`)}</DescriptionStyled>
+			<Year year={getYear(card.release_date)} />
 		</DescriptionWrapper>
 	)
 }
@@ -28,6 +28,7 @@ const DescriptionStyled = styled.div`
 	color: #ffffff;
 	opacity: 0.5;
 	margin-top: 8px;
+	max-width: 322px;
 `
 
 const TitleCard = styled.button`
@@ -41,6 +42,8 @@ const TitleCard = styled.button`
 	background-color: transparent;
 	border: none;
 	padding: 0;
+	max-width: 250px;
+	text-align: left;
 `
 
 const DescriptionWrapper = styled.div`

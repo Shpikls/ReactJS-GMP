@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 type PropsYear = {
-	year: number
+	year: string
 }
 
 export const Year = ({ year }: PropsYear): JSX.Element => {

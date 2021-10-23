@@ -1,13 +1,11 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-export const Logo = (): JSX.Element => {
-	return (
-		<LogoStyled>
-			<span>netflix</span>roulette
-		</LogoStyled>
-	)
-}
+export const Logo = (): JSX.Element => (
+	<LogoStyled>
+		<span>netflix</span>roulette
+	</LogoStyled>
+)
 
 const LogoStyled = styled.span`
 	font-family: Montserrat, sans-serif;

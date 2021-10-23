@@ -1,30 +1,38 @@
 import * as React from 'react'
-import { useContext } from 'react'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import arrowSelect from '~/asserts/arrow-select.svg'
-import { SortContext } from '~/context'
+import { SortBy } from '~/queries/getMovies'
+import { changeSort, setSort } from '~/redux/querySlice'
+import { RootStore } from '~/redux/store'
 
 type Category = {
 	id: number
-	value: string
+	value: SortBy
+	title: string
 }
 
 const sortCategory: Category[] = [
 	{
 		id: 1,
-		value: 'release date',
+		value: 'release_date',
+		title: 'release date',
 	},
 	{
 		id: 2,
-		value: 'rating',
+		value: 'vote_average',
+		title: 'rating',
 	},
 	{
 		id: 3,
-		value: 'movie title',
+		value: 'title',
+		title: 'movie title',
 	},
 	{
 		id: 4,
-		value: 'duration',
+		value: 'runtime',
+		title: 'duration',
 	},
 ]
 
@@ -33,11 +41,13 @@ export const Sort = (): JSX.Element => {
 		<Flex>
 			<SortTextLabel>Sort by</SortTextLabel>
 			<Select>
-				{sortCategory.map((item) => (
-					<Option key={item.id} value={item.value}>
-						{item.value}
-					</Option>
-				))}
+				<>
+					{sortCategory.map((item) => (
+						<Option key={item.id} value={item.value}>
+							{item.title}
+						</Option>
+					))}
+				</>
 			</Select>
 		</Flex>
 	)
@@ -52,11 +62,24 @@ type SelectProps = {
 }
 
 const Select = ({ children }: SelectProps) => {
-	const [sort, setSort] = useContext(SortContext)
+	const dispatch = useDispatch()
+
+	const selectValue = useSelector((store: RootStore) => store.query.sortBy)
+
+	useEffect(() => {
+		if (!selectValue) {
+			dispatch(setSort({ sortBy: 'release_date', sortOrder: 'desc' }))
+		}
+	}, [selectValue])
 
 	return (
 		<SelectWrapper>
-			<SelectInner value={sort} onChange={(event) => setSort(event.target.value)}>
+			<SelectInner
+				value={selectValue}
+				onChange={(e) => {
+					dispatch(changeSort(e.target.value))
+				}}
+			>
 				{children}
 			</SelectInner>
 		</SelectWrapper>
