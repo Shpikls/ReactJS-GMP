@@ -1,17 +1,16 @@
-import { Cards } from '@components/Card/Cards'
 import * as React from 'react'
-import { Item } from 'src/types'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
+import { moviesSelectors } from '~/redux/moviesSlice'
+import { Cards } from '../Card/Cards'
 
-type SearchResultProps = {
-	data: Array<Item>
-}
+export const SearchResult = (): JSX.Element => {
+	const totalFound = useSelector(moviesSelectors.totalFound)
 
-export const SearchResult = ({ data }: SearchResultProps): JSX.Element => {
 	return (
 		<>
-			<Found>{data.length.toString()} movies found</Found>
-			<Cards cards={data} />
+			<Found>{totalFound} movies found</Found>
+			<Cards />
 		</>
 	)
 }

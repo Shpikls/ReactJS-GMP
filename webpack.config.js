@@ -32,6 +32,7 @@ module.exports = (env) => {
 				'@containers': resolvePath('src/containers'),
 				'@styled': resolvePath('src/styled'),
 				'@asserts': resolvePath('src/asserts'),
+				'@data-provider': resolvePath('src/data-provider'),
 				'~': resolvePath('src/'),
 			},
 		},
@@ -74,6 +75,7 @@ module.exports = (env) => {
 							loader: 'babel-loader',
 							options: {
 								presets: ['@babel/preset-env', '@babel/preset-react'],
+								plugins: ['@babel/transform-runtime'],
 							},
 						},
 						'ts-loader',

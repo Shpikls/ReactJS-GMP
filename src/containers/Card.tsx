@@ -1,10 +1,9 @@
 import { Action, Actions } from '@components/Card/Actions'
 import { Description } from '@components/Card/Description'
-import { goToDetails } from '@containers/App'
 import * as React from 'react'
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
-import { DetailsState } from '~/context'
+import errorPoster from '~/asserts/notfound.png'
 import { Item } from '~/types'
 
 type PropsItem = {
@@ -13,17 +12,19 @@ type PropsItem = {
 
 export const Card = ({ card }: PropsItem): JSX.Element => {
 	const [showActions, setShowActions] = useState(false)
-	const [, dispatchDetailsState] = useContext(DetailsState)
+	const [error, setError] = useState(false)
 
 	return (
 		<CardWrapper>
 			<ImageWrapper>
-				<Button
-					onClick={() => {
-						dispatchDetailsState(goToDetails(card.id))
-					}}
-				>
-					<Img src={card.image} alt={`image-${card.image}`} />
+				<Button>
+					<Img
+						onError={(): void => {
+							setError(true)
+						}}
+						src={error ? errorPoster : card.poster_path}
+						alt={`Poster film: ${card.title}`}
+					/>
 				</Button>
 				<Actions action={showActions} actionHandler={setShowActions} />
 			</ImageWrapper>
@@ -40,6 +41,9 @@ const Img = styled.img`
 	cursor: pointer;
 	float: left;
 	user-drag: none;
+	width: 322px;
+	height: 483px;
+	object-fit: cover;
 `
 
 const Button = styled.button`

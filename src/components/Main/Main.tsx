@@ -1,18 +1,13 @@
-import { ToolBar } from '@components/Main/ToolBar'
 import * as React from 'react'
 import styled from 'styled-components'
-import { Item } from '~/types'
 import { SearchResult } from './SearchResult'
+import { ToolBar } from './ToolBar'
 
-type PropsMain = {
-	data: Array<Item>
-}
-
-export const Main = ({ data }: PropsMain): JSX.Element => {
+export const Main = (): JSX.Element => {
 	return (
 		<MainWrapper>
-			<ToolBar data={data} />
-			<SearchResult data={data} />
+			<ToolBar />
+			<SearchResult />
 		</MainWrapper>
 	)
 }

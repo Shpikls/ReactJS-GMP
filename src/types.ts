@@ -1,16 +1,12 @@
 type Item = {
-	name: string
+	title: string
 	id: number
-	image: string
-	genre: Array<string>
-	year: number
-	duration: {
-		hours: number
-		minutes: number
-	}
-	rating: string
-	description: string
-	feature?: string
+	poster_path: string
+	genres: Array<string>
+	release_date: string
+	runtime: number
+	vote_average: number
+	overview: string
 }
 
 type GenreType = {

@@ -1,13 +1,13 @@
-import { Card } from '@containers/Card'
 import * as React from 'react'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
+import { Card } from '~/containers/Card'
+import { moviesSelectors } from '~/redux/moviesSlice'
 import { Item } from '~/types'
 
-type PropsCard = {
-	cards: Array<Item>
-}
+export const Cards = (): JSX.Element => {
+	const cards = useSelector(moviesSelectors.data)
 
-export const Cards = ({ cards }: PropsCard): JSX.Element => {
 	return (
 		<Flex>
 			{cards.map(

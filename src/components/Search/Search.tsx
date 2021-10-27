@@ -1,24 +1,22 @@
 import backgroundImage from '@asserts/header-background.png'
-import { Search } from '@components/Header/Search'
-import { Upper } from '@components/Header/Upper'
+import { SearchBar } from '@components/Search/SearchBar'
+import { Upper } from '@components/Search/Upper'
 import * as React from 'react'
 import styled from 'styled-components'
 
-const Header = (): JSX.Element => {
+export const Search = (): JSX.Element => {
 	return (
-		<HeaderWrapper>
+		<SearchWrapper>
 			<Upper />
-			<Search />
-		</HeaderWrapper>
+			<SearchBar />
+		</SearchWrapper>
 	)
 }
 
-const HeaderWrapper = styled.header`
+const SearchWrapper = styled.section`
 	background: url(${backgroundImage});
 	width: 1200px;
 	margin: 0 auto 10px;
 	padding: 20px 56px;
 	box-sizing: border-box;
 `
-
-export { Header }

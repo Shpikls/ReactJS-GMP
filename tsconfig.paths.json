@@ -7,6 +7,7 @@
 			"@containers/*": ["src/containers/*"],
 			"@styled/*": ["src/styled/*"],
 			"@asserts/*": ["src/asserts/*"],
+			"@data-provider/*": ["src/data-provider/*"],
 		}
 	}
 }
