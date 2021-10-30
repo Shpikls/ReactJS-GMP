@@ -1,14 +1,8 @@
+import { QueryState } from '~/redux/querySlice'
+
 export type SortBy = 'release_date' | 'title' | 'vote_average' | 'runtime' | 'none'
 
-export interface Query {
-	search?: string
-	searchBy?: string
-	filter?: string
-	sortBy?: string
-	sortOrder?: string
-}
-
-export const fetchMovie = async (query?: Query): Promise<any> => {
+export const fetchMovie = async (query?: QueryState): Promise<any> => {
 	const BASE_URL = 'http://localhost:4000/movies'
 	const paramString = queryToParamString(query)
 	const queryString = paramString ? BASE_URL + paramString : BASE_URL
@@ -20,7 +14,7 @@ export const fetchMovie = async (query?: Query): Promise<any> => {
 	return data.json()
 }
 
-const queryToParamString = (query?: Query): string => {
+const queryToParamString = (query?: QueryState): string => {
 	if (!query) {
 		return ''
 	}

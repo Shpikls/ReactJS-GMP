@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import arrowSelect from '~/asserts/arrow-select.svg'
 import { SortBy } from '~/queries/getMovies'
-import { changeSort, setSort } from '~/redux/querySlice'
+import { setSort } from '~/redux/querySlice'
 import { RootStore } from '~/redux/store'
 
 type Category = {
@@ -77,7 +77,7 @@ const Select = ({ children }: SelectProps) => {
 			<SelectInner
 				value={selectValue}
 				onChange={(e) => {
-					dispatch(changeSort(e.target.value))
+					dispatch(setSort({ sortBy: e.target.value, sortOrder: 'desc' }))
 				}}
 			>
 				{children}

@@ -4,7 +4,7 @@ import { InputText } from '@styled/Input'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import { movieSearch } from '~/redux/querySlice'
+import { setSearch } from '~/redux/querySlice'
 
 export const SearchBar = (): JSX.Element => {
 	const [input, setInput] = useState('')
@@ -17,7 +17,7 @@ export const SearchBar = (): JSX.Element => {
 				<InputText value={input} onChange={(e) => setInput(e.target.value)} placeholder="What do you want to watch?" />
 				<SearchButton
 					onClick={() => {
-						dispatch(movieSearch(input, true))
+						dispatch(setSearch(input))
 					}}
 				>
 					Search
