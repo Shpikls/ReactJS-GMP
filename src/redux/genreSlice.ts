@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { RootStore } from '~/redux/store'
 
-export type GenreState = []
+export type GenreState = string[]
 
 const initialState: GenreState = []
 
@@ -9,7 +9,7 @@ const genreSlice = createSlice({
 	name: 'genre',
 	initialState,
 	reducers: {
-		setGenre(state: GenreState, action: PayloadAction<[]>) {
+		setGenre(state: GenreState, action: PayloadAction<GenreState>) {
 			return action.payload
 		},
 	},

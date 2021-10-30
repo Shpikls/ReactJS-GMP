@@ -1,6 +1,7 @@
 import { AnyAction, createSlice, PayloadAction, ThunkAction } from '@reduxjs/toolkit'
-import { fetchMovie, Query } from '~/queries/getMovies'
+import { fetchMovie } from '~/queries/getMovies'
 import { loadingOff, loadingOn } from '~/redux/appSlice'
+import { QueryState } from '~/redux/querySlice'
 import { RootStore } from '~/redux/store'
 import { Item } from '~/types'
 import { setGenre } from './genreSlice'
@@ -30,7 +31,7 @@ const moviesSlice = createSlice({
 export const { pushMovies } = moviesSlice.actions
 
 export const getMoviesByQuery = (
-	query?: Query,
+	query?: QueryState,
 	isSetGenre?: boolean,
 ): ThunkAction<void, RootStore, unknown, AnyAction> => {
 	return (dispatch) => {
@@ -50,4 +51,5 @@ export const moviesSelectors = {
 	totalFound: (store: RootStore): number => store.movies.totalAmount,
 	data: (store: RootStore): Item[] => store.movies.data,
 	totalGenres: (store: RootStore): string[] => store.movies.totalGenres,
+	all: (store: RootStore): MoviesStore => store.movies,
 }

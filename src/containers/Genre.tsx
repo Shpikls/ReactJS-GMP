@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { genreSelectors } from '~/redux/genreSlice'
-import { movieGenres, querySelectors } from '~/redux/querySlice'
+import { querySelectors, setGenre } from '~/redux/querySlice'
 
 export const Genre = (): JSX.Element => {
 	const genre = useSelector(genreSelectors.genre)
@@ -14,7 +14,7 @@ export const Genre = (): JSX.Element => {
 			<GenreItem
 				active={!selectedGenre}
 				onClick={() => {
-					dispatch(movieGenres())
+					dispatch(setGenre())
 				}}
 			>
 				ALL
@@ -26,7 +26,7 @@ export const Genre = (): JSX.Element => {
 						<GenreItem
 							key={index}
 							onClick={() => {
-								dispatch(movieGenres(item))
+								dispatch(setGenre(item))
 							}}
 							active={selectedGenre === item}
 						>

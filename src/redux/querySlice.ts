@@ -1,7 +1,5 @@
-import { AnyAction, createSlice, PayloadAction, ThunkAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { RootStore } from '~/redux/store'
-import { loadingOn } from './appSlice'
-import { getMoviesByQuery } from './moviesSlice'
 
 export interface QueryState {
 	search?: string
@@ -21,6 +19,8 @@ const querySlice = createSlice({
 			return {
 				searchBy: 'title',
 				search: action.payload,
+				sortBy: state.sortOrder,
+				sortOrder: state.sortOrder,
 			}
 		},
 		setGenre(state: QueryState, action: PayloadAction<string | undefined>) {
@@ -39,35 +39,11 @@ const querySlice = createSlice({
 	},
 })
 
-export const movieSearch = (search: string, setGenre?: boolean): ThunkAction<void, RootStore, unknown, AnyAction> => {
-	return (dispatch, getStore) => {
-		dispatch(setSearch(search))
-		const query = getStore().query
-		dispatch(getMoviesByQuery(query, setGenre))
-	}
-}
-
-export const movieGenres = (genre?: string): ThunkAction<void, RootStore, unknown, AnyAction> => {
-	return (dispatch, getStore) => {
-		dispatch(setGenre(genre))
-		const query = getStore().query
-		dispatch(getMoviesByQuery(query))
-	}
-}
-
-export const changeSort = (value: string): ThunkAction<void, RootStore, unknown, AnyAction> => {
-	return (dispatch, getState) => {
-		dispatch(loadingOn())
-		dispatch(setSort({ sortBy: value, sortOrder: 'desc' }))
-		const query = getState().query
-		dispatch(getMoviesByQuery(query))
-	}
-}
-
 export const { setSearch, setGenre, setSort } = querySlice.actions
 
 export default querySlice.reducer
 
 export const querySelectors = {
 	filter: (store: RootStore): string | undefined => store.query.filter,
+	all: (store: RootStore): QueryState => store.query,
 }
