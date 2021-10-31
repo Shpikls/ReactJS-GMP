@@ -26,7 +26,7 @@ export const Card = ({ card }: PropsItem): JSX.Element => {
 						alt={`Poster film: ${card.title}`}
 					/>
 				</Button>
-				<Actions action={showActions} actionHandler={setShowActions} />
+				<Actions action={showActions} actionHandler={setShowActions} cardId={card.id} />
 			</ImageWrapper>
 			<Description card={card} />
 		</CardWrapper>

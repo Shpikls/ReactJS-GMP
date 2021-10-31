@@ -19,7 +19,7 @@ const querySlice = createSlice({
 			return {
 				searchBy: 'title',
 				search: action.payload,
-				sortBy: state.sortOrder,
+				sortBy: state.sortBy,
 				sortOrder: state.sortOrder,
 			}
 		},

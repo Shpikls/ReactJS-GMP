@@ -2,39 +2,22 @@ import actionButton from '@asserts/action-button.svg'
 import closeActionButton from '@asserts/close-action-button.svg'
 import { Button } from '@styled/Button'
 import * as React from 'react'
-import { useContext } from 'react'
+import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import { ModalContext } from '~/context'
+import { deleteOpen, editOpen } from '~/redux/appSlice'
 
 type PropsAction = {
 	action: boolean
 	actionHandler: React.Dispatch<React.SetStateAction<boolean>>
+	cardId: number
 }
 
 type PropsActions = {
 	show: boolean
 }
 
-export const Actions = ({ action, actionHandler }: PropsAction): JSX.Element => {
-	const [, setModalState] = useContext(ModalContext)
-
-	const handleOpenEditModal = () => {
-		setModalState((prevState) => {
-			return {
-				...prevState,
-				...{ editMovie: true },
-			}
-		})
-	}
-
-	const handleOpenDeleteModal = () => {
-		setModalState((prevState) => {
-			return {
-				...prevState,
-				...{ deleteMovie: true },
-			}
-		})
-	}
+export const Actions = ({ action, actionHandler, cardId }: PropsAction): JSX.Element => {
+	const dispatch = useDispatch()
 
 	return (
 		<>
@@ -45,8 +28,8 @@ export const Actions = ({ action, actionHandler }: PropsAction): JSX.Element => 
 				<CloseActionButton onClick={() => actionHandler(false)}>
 					<img src={closeActionButton} alt="close-action" />
 				</CloseActionButton>
-				<ActionButton onClick={handleOpenEditModal}>Edit</ActionButton>
-				<ActionButton onClick={handleOpenDeleteModal}>Delete</ActionButton>
+				<ActionButton onClick={() => dispatch(editOpen(cardId))}>Edit</ActionButton>
+				<ActionButton onClick={() => dispatch(deleteOpen(cardId))}>Delete</ActionButton>
 			</ActionsDetails>
 		</>
 	)

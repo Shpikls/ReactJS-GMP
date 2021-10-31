@@ -1,28 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setGenre } from '~/redux/genreSlice'
-import { getMoviesByQuery, moviesSelectors } from '~/redux/moviesSlice'
+import { getMoviesByQuery } from '~/redux/moviesSlice'
 import { querySelectors } from '~/redux/querySlice'
+
+const usePrevious = (value: any) => {
+	const ref = useRef()
+	useEffect(() => {
+		ref.current = value
+	})
+
+	return ref.current
+}
 
 export const useGetData = (): void => {
 	const dispatch = useDispatch()
 	const query = useSelector(querySelectors.all)
-	const movies = useSelector(moviesSelectors.all)
-	const [trigger, setTrigger] = useState(false)
+	const { search } = query
+	const prevSearch = usePrevious(search)
 
 	useEffect(() => {
-		setTrigger(true)
-	}, [query.search])
+		dispatch(getMoviesByQuery(query, true))
+	}, [])
 
 	useEffect(() => {
-		dispatch(getMoviesByQuery(query, false))
+		dispatch(getMoviesByQuery(query, search !== prevSearch))
 	}, [query])
-
-	useEffect(() => {
-		if (trigger) {
-			dispatch(setGenre(movies.totalGenres))
-		}
-
-		setTrigger(false)
-	}, [movies.totalGenres])
 }

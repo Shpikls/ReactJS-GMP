@@ -58,6 +58,7 @@ const ModalWrapper = styled.div`
 	color: white;
 	overflow-x: hidden;
 	overflow-y: auto;
+	z-index: 1;
 `
 
 const ModalWindow = styled.div`
