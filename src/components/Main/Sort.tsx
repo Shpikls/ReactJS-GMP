@@ -1,10 +1,11 @@
 import * as React from 'react'
-import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import arrowSelect from '~/asserts/arrow-select.svg'
+import { queryStateToAppUrl } from '~/helpers/queryStateToAppUrl'
 import { SortBy } from '~/queries/getMovies'
-import { setSort } from '~/redux/querySlice'
+import { querySelectors } from '~/redux/querySlice'
 import { RootStore } from '~/redux/store'
 
 type Category = {
@@ -42,6 +43,7 @@ export const Sort = (): JSX.Element => {
 			<SortTextLabel>Sort by</SortTextLabel>
 			<Select>
 				<>
+					<Option value="default">-</Option>
 					{sortCategory.map((item) => (
 						<Option key={item.id} value={item.value}>
 							{item.title}
@@ -62,22 +64,17 @@ type SelectProps = {
 }
 
 const Select = ({ children }: SelectProps) => {
-	const dispatch = useDispatch()
-
+	const navigate = useNavigate()
+	const query = useSelector(querySelectors.all)
 	const selectValue = useSelector((store: RootStore) => store.query.sortBy)
-
-	useEffect(() => {
-		if (!selectValue) {
-			dispatch(setSort({ sortBy: 'release_date', sortOrder: 'desc' }))
-		}
-	}, [selectValue])
 
 	return (
 		<SelectWrapper>
 			<SelectInner
 				value={selectValue}
 				onChange={(e) => {
-					dispatch(setSort({ sortBy: e.target.value, sortOrder: 'desc' }))
+					const navigateURL = queryStateToAppUrl(query, { sortBy: e.target.value })
+					navigate(`?${navigateURL}`, { replace: true })
 				}}
 			>
 				{children}

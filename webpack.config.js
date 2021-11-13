@@ -21,6 +21,7 @@ module.exports = (env) => {
 			filename: 'assets/js/[contenthash].[name].js',
 			path: path.resolve(__dirname, 'docs'),
 			assetModuleFilename: 'assets/images/[contenthash].[name][ext]',
+			publicPath: '/',
 		},
 		mode: dev ? 'development' : 'production',
 		stats: 'errors-warnings',
@@ -38,10 +39,7 @@ module.exports = (env) => {
 		},
 		devtool: dev && 'inline-source-map',
 		devServer: {
-			static: {
-				directory: path.join(__dirname, 'public'),
-			},
-			compress: true,
+			historyApiFallback: true,
 			port: 9000,
 			open: true,
 		},
