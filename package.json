@@ -9,7 +9,34 @@
 		"build:dev": "webpack --env dev",
 		"watch": "webpack --env dev --env watch",
 		"lint:fix": "eslint * --fix --no-error-on-unmatched-pattern",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"test": "jest",
+		"cypress": "cypress open"
+	},
+	"jest": {
+		"moduleNameMapper": {
+			"\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "<rootDir>/__mocks__/fileMock.js"
+		},
+		"collectCoverageFrom": [
+			"*.tsx",
+			"*.ts",
+			"**/*.tsx",
+			"**/*.ts"
+		],
+		"testEnvironment": "jsdom",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx"
+		],
+		"collectCoverage": true,
+		"moduleDirectories": [
+			"src",
+			"node_modules"
+		],
+		"rootDir": "src/"
 	},
 	"repository": {
 		"type": "git",
@@ -26,24 +53,34 @@
 		"@babel/core": "^7.15.5",
 		"@babel/plugin-transform-runtime": "^7.15.0",
 		"@babel/preset-env": "^7.15.6",
-		"@babel/preset-react": "^7.14.5",
+		"@babel/preset-react": "^7.16.0",
+		"@babel/preset-typescript": "^7.16.0",
+		"@testing-library/jest-dom": "^5.15.0",
+		"@testing-library/react": "^12.1.2",
+		"@types/jest": "^27.0.2",
+		"@types/whatwg-fetch": "0.0.33",
 		"@typescript-eslint/eslint-plugin": "^4.31.1",
 		"@typescript-eslint/parser": "^4.31.1",
 		"babel-loader": "^8.2.2",
+		"babel-plugin-module-resolver": "^4.1.0",
 		"case-sensitive-paths-webpack-plugin": "^2.4.0",
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^6.2.0",
+		"cypress": "^9.0.0",
 		"dotenv-flow": "^3.2.0",
 		"eslint": "^7.32.0",
 		"eslint-plugin-react": "^7.25.3",
 		"html-webpack-plugin": "^5.3.2",
+		"jest": "^27.3.1",
 		"mini-css-extract-plugin": "^2.3.0",
+		"msw": "^0.35.0",
 		"prettier": "2.4.1",
 		"sass": "^1.39.2",
 		"sass-loader": "^12.1.0",
 		"styled-components": "^5.3.1",
 		"svgo-loader": "^3.0.0",
 		"ts-loader": "^9.2.6",
+		"ts-node": "^10.4.0",
 		"typescript": "^4.4.3",
 		"webpack": "^5.52.1",
 		"webpack-cli": "^4.8.0",
@@ -54,14 +91,16 @@
 		"@types/react-dom": "^17.0.9",
 		"@types/styled-components": "^5.1.14",
 		"bootstrap": "^5.1.1",
+		"cypress-plugin-snapshots": "^1.4.4",
 		"formik": "^2.2.9",
 		"history": "^5.1.0",
 		"joi": "^17.4.2",
+		"node-fetch": "^3.1.0",
 		"react": "^17.0.2",
 		"react-bootstrap": "^2.0.0-rc.1",
 		"react-dom": "^17.0.2",
 		"react-redux": "^7.2.5",
-		"react-router": "^6.0.2",
-		"react-router-dom": "^6.0.2"
+		"react-router-dom": "^6.0.2",
+		"whatwg-fetch": "^3.6.2"
 	}
 }

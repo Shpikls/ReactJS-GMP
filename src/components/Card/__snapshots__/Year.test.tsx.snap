@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Year.tsx To match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBQB jQDGOs"
+  >
+    9889
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Testing Year.tsx To match snapshot 2`] = `<DocumentFragment />`;
