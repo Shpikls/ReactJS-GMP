@@ -1,4 +1,6 @@
-#Проект для курса React Global Mentoring Program
+[УСТАРЕЛО] продолжение проекта https://github.com/Shpikls/ReactGMP.NextJS
+
+# Проект для курса React Global Mentoring Program
 
 ### 1. Установка
 
