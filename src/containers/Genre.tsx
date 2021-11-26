@@ -1,20 +1,24 @@
 import * as React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import { queryStateToAppUrl } from '~/helpers/queryStateToAppUrl'
 import { genreSelectors } from '~/redux/genreSlice'
-import { querySelectors, setGenre } from '~/redux/querySlice'
+import { querySelectors } from '~/redux/querySlice'
 
 export const Genre = (): JSX.Element => {
 	const genre = useSelector(genreSelectors.genre)
+	const query = useSelector(querySelectors.all)
 	const selectedGenre = useSelector(querySelectors.filter)
-	const dispatch = useDispatch()
+	const navigate = useNavigate()
 
 	return (
 		<Flex>
 			<GenreItem
 				active={!selectedGenre}
 				onClick={() => {
-					dispatch(setGenre())
+					const navigateURL = queryStateToAppUrl(query, { genre: false })
+					navigate(`?${navigateURL}`, { replace: true })
 				}}
 			>
 				ALL
@@ -26,7 +30,8 @@ export const Genre = (): JSX.Element => {
 						<GenreItem
 							key={index}
 							onClick={() => {
-								dispatch(setGenre(item))
+								const navigateURL = queryStateToAppUrl(query, { genre: item })
+								navigate(`?${navigateURL}`, { replace: true })
 							}}
 							active={selectedGenre === item}
 						>

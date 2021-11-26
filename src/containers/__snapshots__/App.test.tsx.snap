@@ -1,0 +1,3042 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App.tsx Details opened 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-gWHigU imRThX"
+  >
+    <div
+      class="sc-iktFfs kqsvxf"
+    >
+      <div
+        class="sc-kLgnNl gUtTAH"
+      >
+        netflixroulette
+      </div>
+      <button
+        class="sc-hiSbEG kRhvgs"
+      >
+        <img
+          alt="Search"
+          class="sc-jJEKmz fGTrjb"
+          src=""
+        />
+      </button>
+    </div>
+    <div
+      class="sc-bYEvvW kiAMfV"
+    >
+      <img
+        class="sc-ezredP dEZRUy"
+        src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+      />
+      <div
+        class="sc-giImIA"
+      >
+        <div
+          class="sc-iJuVqt jOTCNK"
+        >
+          <h3
+            class="sc-lmoMya cSmbwZ"
+          >
+            La La Land
+          </h3>
+          <div
+            class="sc-cxFLGX fqQxvB"
+          >
+            7.9
+          </div>
+        </div>
+        <div
+          class="sc-iwyWTf kwygLb"
+        >
+          Comedy,Drama,Romance
+        </div>
+        <div
+          class="sc-bBXrwG cNcbcD"
+        >
+          <span
+            class="sc-fKFxtB jrIYZj"
+          >
+            2016
+          </span>
+          <span
+            class="sc-kfzBvY lNRII"
+          >
+            128 m
+          </span>
+        </div>
+        <div
+          class="sc-dmlqKv ksVSit"
+        >
+          Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.
+        </div>
+      </div>
+    </div>
+  </header>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx To match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx To match snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <h3
+        class="sc-jHVedQ diPGdl"
+      >
+        ADD MOVIE
+      </h3>
+      <form>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="title"
+            >
+              Title
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="title"
+              placeholder="Movie Name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="release_date"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="release_date"
+              placeholder="Select Date"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="poster_path"
+            >
+              movie url
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="poster_path"
+              placeholder="https://"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="vote_average"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="vote_average"
+              placeholder="7.8"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="genres-btn"
+            >
+              genre
+            </label>
+            <div
+              class="sc-crrszt cpvsom"
+            >
+              <button
+                class="sc-iqHYmW gIvaXg"
+                id="genres-btn"
+              >
+                Select genre
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="runtime"
+            >
+              RUNTIME
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="runtime"
+              placeholder="minutes"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          style="position: relative;"
+        >
+          <div
+            class="sc-bqyKOL eRHLrW"
+            style="margin-bottom: 60px;"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="overview"
+            >
+              OVERVIEW
+            </label>
+            <textarea
+              class="sc-bkzYnD Eyrpn"
+              id="overview"
+              placeholder="Movie description"
+              rows="7"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL eIQHIk"
+        >
+          <button
+            class="sc-idOiZg esxyxv"
+            type="reset"
+          >
+            reset
+          </button>
+          <button
+            class="sc-idOiZg sc-dIUeWJ esxyxv ceORsQ"
+            type="submit"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open AddMovie modal 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <h3
+        class="sc-jHVedQ diPGdl"
+      >
+        ADD MOVIE
+      </h3>
+      <form>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="title"
+            >
+              Title
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="title"
+              placeholder="Movie Name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="release_date"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="release_date"
+              placeholder="Select Date"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="poster_path"
+            >
+              movie url
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="poster_path"
+              placeholder="https://"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="vote_average"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="vote_average"
+              placeholder="7.8"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="genres-btn"
+            >
+              genre
+            </label>
+            <div
+              class="sc-crrszt cpvsom"
+            >
+              <button
+                class="sc-iqHYmW gIvaXg"
+                id="genres-btn"
+              >
+                Select genre
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="runtime"
+            >
+              RUNTIME
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="runtime"
+              placeholder="minutes"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          style="position: relative;"
+        >
+          <div
+            class="sc-bqyKOL eRHLrW"
+            style="margin-bottom: 60px;"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="overview"
+            >
+              OVERVIEW
+            </label>
+            <textarea
+              class="sc-bkzYnD Eyrpn"
+              id="overview"
+              placeholder="Movie description"
+              rows="7"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL eIQHIk"
+        >
+          <button
+            class="sc-idOiZg esxyxv"
+            type="reset"
+          >
+            reset
+          </button>
+          <button
+            class="sc-idOiZg sc-dIUeWJ esxyxv ceORsQ"
+            type="submit"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open DeleteMovie modal 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <form>
+        <h3
+          class="sc-dlfnuX jwZVvA"
+        >
+          Delete MOVIE
+        </h3>
+        <p
+          class="sc-hKgJUU fJIumJ"
+        >
+          Are you sure you want to delete this movie?
+        </p>
+        <input
+          class="sc-eCstlR intllR"
+          type="submit"
+          value="confirm"
+        />
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open DeleteMovie modal 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <form>
+        <h3
+          class="sc-dlfnuX jwZVvA"
+        >
+          Delete MOVIE
+        </h3>
+        <p
+          class="sc-hKgJUU fJIumJ"
+        >
+          Are you sure you want to delete this movie?
+        </p>
+        <input
+          class="sc-eCstlR intllR"
+          disabled=""
+          type="submit"
+          value="confirm"
+        />
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open EditMovie modal 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <h3
+        class="sc-hHfuMS hrHbNs"
+      >
+        EDIT MOVIE
+      </h3>
+      <form>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="title"
+            >
+              Title
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="title"
+              placeholder="Movie Name"
+              type="text"
+              value="La La Land"
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="release_date"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="release_date"
+              placeholder="Select Date"
+              type="text"
+              value="2016-12-29"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="poster_path"
+            >
+              movie url
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="poster_path"
+              placeholder="https://"
+              type="text"
+              value="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="vote_average"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="vote_average"
+              placeholder="7.8"
+              type="text"
+              value="7.9"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="genres-btn"
+            >
+              genre
+            </label>
+            <div
+              class="sc-crrszt cpvsom"
+            >
+              <button
+                class="sc-iqHYmW JbODA"
+                id="genres-btn"
+              >
+                Comedy, Drama, Romance
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="runtime"
+            >
+              RUNTIME
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="runtime"
+              placeholder="minutes"
+              type="text"
+              value="128"
+            />
+          </div>
+        </div>
+        <div
+          style="position: relative;"
+        >
+          <div
+            class="sc-bqyKOL eRHLrW"
+            style="margin-bottom: 60px;"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="overview"
+            >
+              OVERVIEW
+            </label>
+            <textarea
+              class="sc-bkzYnD Eyrpn"
+              id="overview"
+              placeholder="Movie description"
+              rows="7"
+            >
+              Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.
+            </textarea>
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL eIQHIk"
+        >
+          <button
+            class="sc-idOiZg esxyxv"
+            type="reset"
+          >
+            reset
+          </button>
+          <button
+            class="sc-idOiZg sc-dIUeWJ esxyxv ceORsQ"
+            type="submit"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open EditMovie modal 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <h3
+        class="sc-hHfuMS hrHbNs"
+      >
+        EDIT MOVIE
+      </h3>
+      <form>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="title"
+            >
+              Title
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="title"
+              placeholder="Movie Name"
+              type="text"
+              value="La La Land"
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="release_date"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="release_date"
+              placeholder="Select Date"
+              type="text"
+              value="2016-12-29"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="poster_path"
+            >
+              movie url
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="poster_path"
+              placeholder="https://"
+              type="text"
+              value="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="vote_average"
+            >
+              RELEASE DATE
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="vote_average"
+              placeholder="7.8"
+              type="text"
+              value="7.9"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL hGllTa"
+        >
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="genres-btn"
+            >
+              genre
+            </label>
+            <div
+              class="sc-crrszt cpvsom"
+            >
+              <button
+                class="sc-iqHYmW JbODA"
+                id="genres-btn"
+              >
+                Comedy, Drama, Romance
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-bqyKOL sc-kstqJO eRHLrW kWzUeC"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="runtime"
+            >
+              RUNTIME
+            </label>
+            <input
+              class="sc-fodVek beXJGG"
+              id="runtime"
+              placeholder="minutes"
+              type="text"
+              value="128"
+            />
+          </div>
+        </div>
+        <div
+          style="position: relative;"
+        >
+          <div
+            class="sc-bqyKOL eRHLrW"
+            style="margin-bottom: 60px;"
+          >
+            <label
+              class="sc-hBEYId kKrdhn"
+              for="overview"
+            >
+              OVERVIEW
+            </label>
+            <textarea
+              class="sc-bkzYnD Eyrpn"
+              id="overview"
+              placeholder="Movie description"
+              rows="7"
+            >
+              Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.
+            </textarea>
+          </div>
+        </div>
+        <div
+          class="sc-bqyKOL eIQHIk"
+        >
+          <button
+            class="sc-idOiZg esxyxv"
+            type="reset"
+          >
+            reset
+          </button>
+          <button
+            class="sc-idOiZg sc-dIUeWJ esxyxv ceORsQ"
+            type="submit"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open EditMovie modal 3`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <form>
+        <h3
+          class="sc-dlfnuX jwZVvA"
+        >
+          Delete MOVIE
+        </h3>
+        <p
+          class="sc-hKgJUU fJIumJ"
+        >
+          Are you sure you want to delete this movie?
+        </p>
+        <input
+          class="sc-eCstlR intllR"
+          type="submit"
+          value="confirm"
+        />
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Test App.tsx open EditMovie modal 4`] = `
+<DocumentFragment>
+  <div
+    class="sc-jSgvzq bQhavc"
+  >
+    <div
+      class="sc-gKseQn eagAgG"
+    >
+      <button
+        class="sc-iBPTik cGsijU"
+      >
+        <img
+          alt="modal close button"
+          class="sc-fubCzh bDyPTi"
+          src=""
+        />
+      </button>
+      <form>
+        <h3
+          class="sc-dlfnuX jwZVvA"
+        >
+          Delete MOVIE
+        </h3>
+        <p
+          class="sc-hKgJUU fJIumJ"
+        >
+          Are you sure you want to delete this movie?
+        </p>
+        <input
+          class="sc-eCstlR intllR"
+          disabled=""
+          type="submit"
+          value="confirm"
+        />
+      </form>
+    </div>
+  </div>
+  <section
+    class="sc-TmdmN caUtAn"
+  >
+    <div
+      class="sc-bqyKOL hGllTa"
+    >
+      <span
+        class="sc-cBNeex gUXXVM"
+      >
+        <span>
+          netflix
+        </span>
+        roulette
+      </span>
+      <button
+        class="sc-jcVcSv sc-dwfUuu eimXPj kDnJWc"
+      >
+        + add movie
+      </button>
+    </div>
+    <div
+      class="sc-GqePz eZrdcr"
+    >
+      <h2
+        class="sc-fWSDcn jLOMRM"
+      >
+        FIND YOUR MOViE
+      </h2>
+      <div
+        class="sc-bqyKOL hGllTa"
+      >
+        <input
+          class="sc-clsFYl hhDzZx"
+          placeholder="What do you want to watch?"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-jcVcSv sc-fbkiRW eimXPj gsahoo"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="sc-gGmKaI fVIRMb"
+  >
+    <div
+      class="sc-bqyKOL sc-lcuiOb hGllTa ejUzrx"
+    >
+      <div
+        class="sc-laRQdt gxPAFC"
+      >
+        <button
+          class="sc-iNqMzA jMXPok"
+        >
+          ALL
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Comedy
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Drama
+        </button>
+        <button
+          class="sc-iNqMzA brVGhf"
+        >
+          Romance
+        </button>
+      </div>
+      <div
+        class="sc-ehSDrC fKNDaw"
+      >
+        <label
+          class="sc-higWrZ hVtERz"
+        >
+          Sort by
+        </label>
+        <div
+          class="sc-eJMPIT VtGgS"
+        >
+          <select
+            class="sc-nFqVA HHFFM"
+          >
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="default"
+            >
+              -
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="release_date"
+            >
+              release date
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="vote_average"
+            >
+              rating
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="title"
+            >
+              movie title
+            </option>
+            <option
+              class="sc-jeGTLq eenMbw"
+              value="runtime"
+            >
+              duration
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gTgzoy EvksO"
+    >
+       movies found
+    </div>
+    <div
+      class="sc-jgHCSr fkkxPH"
+    >
+      <div
+        class="sc-hTZgZg kGvnzw"
+      >
+        <div
+          class="sc-cOajNj cIFWej"
+        >
+          <button
+            class="sc-khAkCZ dYPsVf"
+          >
+            <img
+              alt="Poster film: La La Land"
+              class="sc-Azgjq hEBSWv"
+              src="https://image.tmdb.org/t/p/w500/ylXCdC106IKiarftHkcacasaAcb.jpg"
+            />
+          </button>
+          <button
+            class="sc-eggMyH cHLljl"
+          >
+            <img
+              alt="action-button"
+              src=""
+            />
+          </button>
+          <div
+            class="sc-iBaQBe jcVBPr"
+          >
+            <button
+              class="sc-iUuxjF joVgTg"
+            >
+              <img
+                alt="close-action"
+                src=""
+              />
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Edit
+            </button>
+            <button
+              class="sc-jcVcSv sc-bZSRNg eimXPj cJIeyH"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bBrNTY dlqysZ"
+        >
+          <button
+            class="sc-dOSRxR buupQx"
+          >
+            La La Land
+          </button>
+          <div
+            class="sc-jNMcJZ dYtMRY"
+          >
+            Comedy, Drama, Romance
+          </div>
+          <div
+            class="sc-cTkxnA dmXDHK"
+          >
+            2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="sc-citxvW fMXoNp"
+  >
+    <span
+      class="sc-cBNeex gUXXVM"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;

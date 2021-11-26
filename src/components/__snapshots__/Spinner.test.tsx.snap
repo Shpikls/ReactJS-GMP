@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NotFound.tsx To mach snapshot 1`] = `[Function]`;
+
+exports[`Testing Spinner.tsx To mach snapshot 1`] = `[Function]`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test styled components Button to mach snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdfBQB btGkqL"
+  />
+</DocumentFragment>
+`;
+
+exports[`Test styled components Flex to mach snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gsTEea huIxuF"
+  />
+</DocumentFragment>
+`;
+
+exports[`Test styled components Input to mach snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="sc-dlfnuX hrctIj"
+    type="text"
+  />
+</DocumentFragment>
+`;

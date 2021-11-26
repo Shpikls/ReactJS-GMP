@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer.tsx To mach snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="sc-gsTEea ZreqD"
+  >
+    <span
+      class="sc-bdfBQB iqkcpy"
+    >
+      <span>
+        netflix
+      </span>
+      roulette
+    </span>
+  </footer>
+</DocumentFragment>
+`;

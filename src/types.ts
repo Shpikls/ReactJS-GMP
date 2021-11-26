@@ -9,17 +9,4 @@ type Item = {
 	overview: string
 }
 
-type GenreType = {
-	id: number
-	value: string
-}
-
-interface IModalState {
-	addModal: boolean
-	editMovie: boolean
-	deleteMovie: boolean
-}
-
-type Sort = string | undefined
-
-export { Item, GenreType, IModalState, Sort }
+export { Item }
