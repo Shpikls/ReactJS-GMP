@@ -63,4 +63,6 @@ export default appSlice.reducer
 
 export const appSelectors = {
 	loading: (store: RootStore): boolean => store.app.loading,
+	modal: (store: RootStore): AppState['modal'] => store.app.modal,
+	id: (store: RootStore): AppState['targetId'] => store.app.targetId,
 }

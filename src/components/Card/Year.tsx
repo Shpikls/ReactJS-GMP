@@ -2,11 +2,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 type PropsYear = {
-	year: string
+	year?: string
 }
 
-export const Year = ({ year }: PropsYear): JSX.Element => {
-	return <YearStyled>{year}</YearStyled>
+export const Year = ({ year }: PropsYear): JSX.Element | null => {
+	if (year) return <YearStyled>{year}</YearStyled>
+	return null
 }
 
 const YearStyled = styled.div`

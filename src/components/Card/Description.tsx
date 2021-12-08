@@ -7,7 +7,9 @@ type PropsItem = {
 	card: Item
 }
 
-const getYear = (date: string) => date.slice(0, 4)
+const getYear = (date: string) => {
+	if (date && date.length > 0) return date.slice(0, 4)
+}
 
 export const Description = ({ card }: PropsItem): JSX.Element => {
 	return (

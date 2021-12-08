@@ -1,13 +1,33 @@
+import { useFormik } from 'formik'
 import * as React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
+import { appSelectors, closeModal, loadingOff, loadingOn } from '~/redux/appSlice'
+import { getMoviesByQuery } from '~/redux/moviesSlice'
+import { querySelectors } from '~/redux/querySlice'
 
 export const DeleteMovie = (): JSX.Element => {
+	const id = useSelector(appSelectors.id)
+	const query = useSelector(querySelectors.all)
+	const dispatch = useDispatch()
+	const formik = useFormik({
+		initialValues: {
+			submit: 'confirm',
+		},
+		onSubmit: async () => {
+			dispatch(loadingOn())
+			await fetch(`http://localhost:4000/movies/${id}`, { method: 'DELETE' })
+			dispatch(closeModal())
+			dispatch(getMoviesByQuery(query, true))
+			dispatch(loadingOff())
+		},
+	})
 	return (
-		<>
+		<form onSubmit={formik.handleSubmit}>
 			<Title>Delete MOVIE</Title>
 			<Description>Are you sure you want to delete this movie?</Description>
-			<Button>confirm</Button>
-		</>
+			<Button value={formik.values.submit} type="submit" disabled={formik.isSubmitting} />
+		</form>
 	)
 }
 
@@ -31,7 +51,7 @@ const Description = styled.p`
 	color: #ffffff;
 `
 
-const Button = styled.button`
+const Button = styled.input`
 	font-family: Montserrat, sans-serif;
 	font-style: normal;
 	font-weight: 500;

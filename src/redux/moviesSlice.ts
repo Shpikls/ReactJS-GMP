@@ -51,5 +51,4 @@ export const moviesSelectors = {
 	totalFound: (store: RootStore): number => store.movies.totalAmount,
 	data: (store: RootStore): Item[] => store.movies.data,
 	totalGenres: (store: RootStore): string[] => store.movies.totalGenres,
-	all: (store: RootStore): MoviesStore => store.movies,
 }
