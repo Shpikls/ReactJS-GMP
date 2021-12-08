@@ -1,5 +1,9 @@
 import * as React from 'react'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import { queryStateToAppUrl } from '~/helpers/queryStateToAppUrl'
+import { querySelectors } from '~/redux/querySlice'
 import { Item } from '~/types'
 import { Year } from './Year'
 
@@ -7,12 +11,24 @@ type PropsItem = {
 	card: Item
 }
 
-const getYear = (date: string) => date.slice(0, 4)
+const getYear = (date: string) => {
+	if (date && date.length > 0) return date.slice(0, 4)
+}
 
 export const Description = ({ card }: PropsItem): JSX.Element => {
+	const query = useSelector(querySelectors.all)
+	const navigate = useNavigate()
+
 	return (
 		<DescriptionWrapper>
-			<TitleCard>{card.title}</TitleCard>
+			<TitleCard
+				onClick={() => {
+					const navigateURL = queryStateToAppUrl(query, { movie: String(card.id) })
+					navigate(`?${navigateURL}`, { replace: true })
+				}}
+			>
+				{card.title}
+			</TitleCard>
 			<DescriptionStyled>{card.genres.reduce((accumulator, genre) => `${accumulator}, ${genre}`)}</DescriptionStyled>
 			<Year year={getYear(card.release_date)} />
 		</DescriptionWrapper>

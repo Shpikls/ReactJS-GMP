@@ -2,8 +2,12 @@ import { Action, Actions } from '@components/Card/Actions'
 import { Description } from '@components/Card/Description'
 import * as React from 'react'
 import { useState } from 'react'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import errorPoster from '~/asserts/notfound.png'
+import { queryStateToAppUrl } from '~/helpers/queryStateToAppUrl'
+import { querySelectors } from '~/redux/querySlice'
 import { Item } from '~/types'
 
 type PropsItem = {
@@ -13,11 +17,18 @@ type PropsItem = {
 export const Card = ({ card }: PropsItem): JSX.Element => {
 	const [showActions, setShowActions] = useState(false)
 	const [error, setError] = useState(false)
+	const query = useSelector(querySelectors.all)
+	const navigate = useNavigate()
 
 	return (
 		<CardWrapper>
 			<ImageWrapper>
-				<Button>
+				<Button
+					onClick={() => {
+						const navigateURL = queryStateToAppUrl(query, { movie: String(card.id) })
+						navigate(`?${navigateURL}`, { replace: true })
+					}}
+				>
 					<Img
 						onError={(): void => {
 							setError(true)

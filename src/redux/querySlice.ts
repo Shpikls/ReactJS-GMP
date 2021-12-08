@@ -7,6 +7,7 @@ export interface QueryState {
 	filter?: string
 	sortBy?: string
 	sortOrder?: string
+	movie?: number
 }
 
 const initialState: QueryState = {}
@@ -17,10 +18,16 @@ const querySlice = createSlice({
 	reducers: {
 		setSearch(state: QueryState, action: PayloadAction<string>) {
 			return {
+				...state,
 				searchBy: 'title',
 				search: action.payload,
-				sortBy: state.sortBy,
-				sortOrder: state.sortOrder,
+			}
+		},
+		clearSearch(state: QueryState) {
+			return {
+				...state,
+				searchBy: undefined,
+				search: undefined,
 			}
 		},
 		setGenre(state: QueryState, action: PayloadAction<string | undefined>) {
@@ -36,10 +43,29 @@ const querySlice = createSlice({
 				sortOrder: action.payload.sortOrder,
 			}
 		},
+		clearSort(state: QueryState) {
+			return {
+				...state,
+				sortBy: undefined,
+				sortOrder: undefined,
+			}
+		},
+		setMovie(state: QueryState, action: PayloadAction<number>) {
+			return {
+				...state,
+				movie: action.payload,
+			}
+		},
+		clearMovie(state: QueryState) {
+			return {
+				...state,
+				movie: undefined,
+			}
+		},
 	},
 })
 
-export const { setSearch, setGenre, setSort } = querySlice.actions
+export const { setSearch, setGenre, setSort, clearSearch, clearSort, setMovie, clearMovie } = querySlice.actions
 
 export default querySlice.reducer
 
